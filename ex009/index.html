@@ -8,31 +8,51 @@
   </head>
   <body>
     <h1>Listas em HTML</h1>
+    <p>
+      Listas tendem a ser utilizadas em Menus com listas não ordenadas
+      &lt;ul&gt;<br />
+      Existe também as listas ordenadas &lt;ol&gt; <br />
+      Dentro de cada lista, os itens devem ser marcados como &lt;li&gt;
+    </p>
     <p>Lista de jogos favoritos por console</p>
     <ul>
+      <!--type="" disc circle square-->
       <li>Nintendo DS</li>
       <ol>
+        <!--type="" 1 A a I i-->
         <li>Pokemon</li>
-        <ul style="list-style-type: circle">
+        <ul type="square">
           <li>Pokemon Heart Gold</li>
           <li>Pokemon Black</li>
         </ul>
       </ol>
       <li>Xbox</li>
-      <ol>
+      <ol start="2">
         <li>Happy Wars</li>
         <li>GTA V</li>
       </ol>
       <li>Computador</li>
-      <ol>
+      <ol start="4">
         <li>Warframe</li>
         <li>Elden ring</li>
         <li>Borderlands</li>
-        <ul style="list-style-type: circle">
+        <ul type="square">
           <li>Borderlands The Pre Sequel</li>
           <li>Borderlands 2</li>
         </ul>
       </ol>
     </ul>
+    <h2>Lista de Definição</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação para a criação do conteudo de um site</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de marcação para criação do design de um site</dd>
+      <dt>Javascript</dt>
+      <dd>
+        Linguagem de programação para a criação de interatividade de um site
+      </dd>
+    </dl>
+    <p>A lista de definição serve também para ajudar no <strong>SEO</strong></p>
   </body>
 </html>
