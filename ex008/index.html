@@ -5,17 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
     <title>Semântica</title>
+    <style>
+      mark {
+        background-color: burlywood;
+      }
+    </style>
   </head>
   <body>
     <h1>Formatação de texto</h1>
     <h2>Negrito/Destaque</h2>
-    <p>Maneira não semantica de utilizar o <b>negrito</b> com a tag B</p>
+    <p>
+      Maneira não semantica de utilizar o <b>negrito</b> com a tag &lt;b&gt;
+    </p>
     <p>
       <b>Maneira semantica</b> de utilizar o <strong>destaque</strong> com a tag
-      strong
+      &lt;strong&gt;
     </p>
     <h2>Italico / Enfase</h2>
-    <p>Maneira não semantica de utilizar o <i>italico</i> com a tag i</p>
-    <p><b>Maneira semantica</b> de utilizar o <em>Enfase</em> com a tag em</p>
+    <p>
+      Maneira não semantica de utilizar o <i>italico</i> com a tag &lt;i&gt;
+    </p>
+    <p>
+      <b>Maneira semantica</b> de utilizar o <em>Enfase</em> com a tag
+      &lt;em&gt;
+    </p>
+    <h2>Texto Marcado</h2>
+    <p>
+      Maneira de se utilizar a tag<mark>&lt;mark&gt;</mark> que pode ter a cor
+      modificada via CSS, nesse caso dentro do <mark>&lt;style&gt;</mark> na
+      <mark>&lt;head&gt;</mark>
+    </p>
+    <h2>Texto grande e pequeno</h2>
+    <p>
+      estamos criando um <big>texto grande</big> com &lt;big&gt;,e um
+      <small>texto pequeno</small> com &lt;small&gt; nesse paragrafo, cujo qual
+      o &lt;big&gt; ficou obsoleto pois entra como uma tag
+      <strong>sem semântica</strong>
+      <h2>Texto deletado</h2>
+      <p>podemos marcar um texto como <del>excluido</del> com a tag &lt;del&gt;, que pode ser lido mas nao considerado</p>
+      <h2>Texto inserido</h2>
+      <p>podemos marcar um texto como <ins>inserido</ins>, com a tag &lt;ins&gt; para dar uma enfase e indicar que ele foi adicionado depois</p>
+    </p>
+    <h2>Texto Sobresscrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3, com a tag &lt;sup&gt;</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O, com a tag &lt;sub&gt;</p>
+  
   </body>
 </html>

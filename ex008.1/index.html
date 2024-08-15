@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citações e Códigos</title>
+  </head>
+  <body>
+    <h1>Outras formatações</h1>
+    <h2>Codigo-fonte / Pré formatação</h2>
+    <p>
+      O comando <code>print('hello world')</code> é escrita em linguagem Python,
+      e marcada com a tag &lt;code&gt; para gerar uma fonte monoespaçada,
+      podendo utilizar em conjunto o &lt;pre&gt; para pré formatar o texto
+    </p>
+    <pre>
+        <code>
+num = int(input('Digite um numero '))
+if num % 2 == 0:
+    print('O numero {num} é PAR')
+else:
+    print('O numero {num} é IMPAR')
+print('Fim do programa!')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>
+      Como diria o pai de um amigo: <q>O Computador é um burro muito rápido</q>
+    </p>
+    <p>
+      Essa citação/quote foi utilizando a tag &lt;q&gt;, sendo util para
+      citações simples, além do texto ser um nbsp
+    </p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Pipipi Popopo no seu livro Alakazam:</p>
+    <blockquote
+      cite="https://www.treinaweb.com.br/blog/o-que-e-asd-adaptative-software-development"
+    >
+      Adaptive Software Development (ASD) ou Desenvolvimento de Software
+      Adaptativo é uma técnica para o desenvolvimento de softwares, proposta por
+      Jim Highsmith. Este modelo concentra-se na colaboração humana e na
+      auto-organização da equipe. Tem foco de atuação principalmente nos
+      problemas de sistemas complexos, para grandes desenvolvimentos. O método
+      estimula fortemente o desenvolvimento com repetições e uma constante
+      prototipação.
+    </blockquote>
+    <p>
+      O &lt;blockquote&gt; faz uma formatação semantica que informa ao site que
+      o texto dentro dele é uma citação, e o parametro
+      <em>cite=""</em> informa ao <strong>SEO</strong> que aquele texto é
+      citação do link nele informado
+    </p>
+  </body>
+</html>
