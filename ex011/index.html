@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens, Videos, Audios</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Imagens Dinamicas</h1>
+    <p>
+      Tente abrir o site em diversos sites diferentes ou aumente e diminua o
+      tamanho do navegador
+    </p>
+    <p>testando a imagem</p>
+    <picture>
+      <source
+        media="(max-width:750px )"
+        srcset="Images/image-small.svg"
+        type="image/svg+xml" />
+      <source
+        media="(max-width: 1050px)"
+        srcset="Images/image-medium.svg"
+        type="image/svg+xml" />
+      <img src="Images/image-big.svg" alt="big"
+    /></picture>
+  </body>
+</html>
