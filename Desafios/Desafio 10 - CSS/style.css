@@ -48,6 +48,8 @@ header h1 {
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 header p {
@@ -66,7 +68,7 @@ nav {
 }
 
 nav div {
-    max-width: 1040px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -107,6 +109,7 @@ main h2 {
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor2), transparent, transparent);
     text-indent: 8px;
+    font-weight: normal;
 }
 
 main p {
@@ -148,9 +151,19 @@ main a:hover {
     margin: auto;
 }
 
+.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%;
+}
+
 iframe {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
