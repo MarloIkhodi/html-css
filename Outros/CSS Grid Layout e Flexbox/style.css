@@ -99,3 +99,66 @@ img {
         order: -1;
     }
 }
+
+/* CSS grid 2 */
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    /* 1fr = atua no .video enquanto 200px= atua no .sidebar */
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.sidebar {
+    display: grid;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: flex;
+        overflow: scroll;
+    }
+
+    .sidebar>div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}
+
+/* CSS grid3 */
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: auto;
+    gap: 20px;
+}
+
+.grid3-item:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.grid3-item {
+    display: grid;
+}
+
+.grid3-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: flex-end;
+}
+
+.grid3-item p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-end;
+}
