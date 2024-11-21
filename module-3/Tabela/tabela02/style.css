@@ -8,18 +8,23 @@ tbody tr:nth-child(odd) {
 
 table {
   border-collapse: collapse;
+  position: relative;
 }
-
+thead > tr > th {
+  position: sticky;
+  top: -1px;
+  background-color: rgb(90, 87, 87);
+}
 td,
 th {
   border: 1px solid black;
   padding: 4px;
-  width: auto;
+  min-width: 150px;
   text-align: center;
 }
 
 tfoot,
 thead {
-  background-color: black;
+  background-color: rgb(90, 87, 87);
   color: white;
 }
