@@ -28,3 +28,15 @@ thead {
   background-color: rgb(90, 87, 87);
   color: white;
 }
+
+.cgroup {
+  background-color: yellowgreen;
+}
+
+.populacao {
+  background-color: red;
+}
+
+.estados {
+  background-color: green;
+}
